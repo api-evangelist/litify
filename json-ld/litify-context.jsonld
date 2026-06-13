@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "litify": "https://www.litify.com/vocab#",
+    "name": "name",
+    "description": "description",
+    "url": "url",
+    "image": "image",
+    "provider": "provider",
+    "SoftwareApplication": "SoftwareApplication",
+    "WebAPI": "WebAPI",
+    "Thing": "Thing",
+    "Organization": "Organization",
+    "LegalService": "LegalService",
+    "matter": {
+      "@id": "litify:matter",
+      "@type": "Thing"
+    },
+    "intake": {
+      "@id": "litify:intake",
+      "@type": "Thing"
+    },
+    "document": {
+      "@id": "litify:document",
+      "@type": "DigitalDocument"
+    },
+    "task": {
+      "@id": "litify:task",
+      "@type": "Thing"
+    },
+    "timeTracking": {
+      "@id": "litify:timeTracking",
+      "@type": "Thing"
+    },
+    "billing": {
+      "@id": "litify:billing",
+      "@type": "Invoice"
+    },
+    "clientCommunication": {
+      "@id": "litify:clientCommunication",
+      "@type": "CommunicateAction"
+    },
+    "lawFirm": {
+      "@id": "litify:lawFirm",
+      "@type": "LegalService"
+    },
+    "legalDepartment": {
+      "@id": "litify:legalDepartment",
+      "@type": "Organization"
+    }
+  },
+  "@type": "SoftwareApplication",
+  "@id": "https://www.litify.com/",
+  "name": "Litify",
+  "description": "Litify is a legal operating system built on Salesforce that provides REST APIs for managing matters, intakes, documents, tasks, time tracking, billing, and client communications for law firms and legal departments.",
+  "url": "https://www.litify.com/",
+  "image": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "provider": {
+    "@type": "Organization",
+    "name": "Litify",
+    "url": "https://www.litify.com/"
+  },
+  "applicationCategory": "LegalTechnology",
+  "operatingSystem": "Salesforce",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.litify.com/pricing"
+  },
+  "termsOfService": "https://www.litify.com/legal/litify-api-integration-agreement"
+}
