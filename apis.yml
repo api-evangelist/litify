@@ -1,0 +1,95 @@
+name: Litify
+description: Litify is a legal operating system built on Salesforce that provides REST APIs for managing matters, intakes, documents, tasks, time tracking, billing, and client communications for law firms and legal departments. Integrators access Litify functionality via the Salesforce REST API and the Litify Docrio API under the terms of the Litify API Integration Agreement.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/litify/refs/heads/main/apis.yml
+type: Index
+tags:
+  - Legal
+  - Law Firms
+  - Matter Management
+  - Intake Management
+  - Document Management
+  - Time Tracking
+  - Billing
+  - Client Communications
+  - Legal Technology
+  - Salesforce
+created: "2026-06-13"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+aid: litify
+
+apis:
+
+  - name: Litify Salesforce REST API
+    description: Provides access to the Litify legal operating system via the Salesforce REST API. Supports managing matters, intakes, documents, tasks, time tracking, billing, and client communications for law firms. Authentication uses an approved integrator key token provided by Litify alongside Salesforce OAuth 2.0.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.litify.com/platform
+    baseURL: https://login.salesforce.com
+    tags:
+      - Matters
+      - Intakes
+      - Documents
+      - Tasks
+      - Time Tracking
+      - Billing
+      - Client Communications
+    properties:
+      - type: Documentation
+        url: https://www.litify.com/platform
+      - type: LegalTermsOfService
+        url: https://www.litify.com/legal/litify-api-integration-agreement
+      - type: Integrations
+        url: https://www.litify.com/platform
+    contact:
+      - FN: Litify Support
+        url: https://www.litify.com/
+
+  - name: Litify Docrio API
+    description: Provides access to Litify's Docrio document management layer, enabling integrators to create, retrieve, and manage documents and folders associated with legal matters. Documents uploaded via integrations are stored in Docrio and linked to matter records.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://www.litify.com/blog/docs-made-delightful
+    baseURL: https://login.salesforce.com
+    tags:
+      - Documents
+      - Document Management
+      - File Storage
+      - Matters
+    properties:
+      - type: Documentation
+        url: https://www.litify.com/blog/docs-made-delightful
+      - type: LegalTermsOfService
+        url: https://www.litify.com/legal/litify-api-integration-agreement
+    contact:
+      - FN: Litify Support
+        url: https://www.litify.com/
+
+common:
+
+  - type: Plans
+    url: https://raw.githubusercontent.com/api-evangelist/litify/refs/heads/main/plans/litify-plans-pricing.yml
+
+  - type: RateLimits
+    url: https://raw.githubusercontent.com/api-evangelist/litify/refs/heads/main/rate-limits/litify-rate-limits.yml
+
+  - type: FinOps
+    url: https://raw.githubusercontent.com/api-evangelist/litify/refs/heads/main/finops/litify-finops.yml
+
+  - type: Website
+    url: https://www.litify.com/
+
+  - type: Blog
+    url: https://www.litify.com/blog
+
+  - type: LegalTermsOfService
+    url: https://www.litify.com/legal/litify-api-integration-agreement
+
+  - type: Integrations
+    url: https://slashdot.org/software/p/Litify/integrations/
+
+  - type: Pricing
+    url: https://www.litify.com/pricing
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,0 +1,58 @@
+name: Litify Plans and Pricing
+description: Pricing plans for Litify, a legal operating system built on Salesforce. Litify requires both Litify licensing and Salesforce licensing. Pricing is typically custom and quote-based; figures below represent publicly available estimates.
+url: https://www.litify.com/pricing
+
+plans:
+
+  - name: Litify Platform
+    description: Core legal operating system built on Salesforce for law firms and legal departments. Includes matter management, intake workflows, document management, time tracking, billing, and client communications.
+    type: commercial
+    pricing_model: per-user-per-month
+    price_per_user_month_usd: 150
+    price_notes: Starting price; final cost varies by firm size, features selected, and negotiated contract terms. Salesforce licensing is required in addition to Litify licensing.
+    contract_terms:
+      - annual
+      - multi-year
+    auto_renewal_price_increase_cap_pct: 7
+    payment_terms_days: 30
+    features:
+      - Matter management
+      - Intake management
+      - Document management (Docrio)
+      - Time tracking
+      - Billing and invoicing
+      - Client communications
+      - Task management
+      - Workflow automation
+      - Business intelligence and analytics
+      - Salesforce REST API access
+      - Litify Docrio API access
+      - 30+ third-party integrations
+    requires_salesforce_license: true
+    estimated_total_cost_per_user_month_usd_range: "150-300+"
+    notes: Pricing is not publicly listed; contact Litify sales for an Order Form with exact fees. Enterprise and custom tiers may be available for large firms.
+
+  - name: Litify AI Add-on (LitifyAI)
+    description: AI-powered features including Litify ACE (Agentic Case Expert), LitifyAI Draft and Ask, AI-Powered Invoice Review, and Conflict Check Agent.
+    type: add-on
+    pricing_model: custom
+    price_notes: Pricing for AI add-ons is not publicly disclosed; included or priced separately depending on contract.
+    features:
+      - Litify ACE autonomous case expert agent
+      - LitifyAI Draft document generation
+      - LitifyAI Ask document querying
+      - AI-Powered Invoice Review
+      - Conflict Check Agent with fuzzy matching
+
+api_billing_notes:
+  - API access is included as part of the Litify platform subscription; no separate API-only tier is offered.
+  - API integrators must execute the Litify API Integration Agreement and receive an approved integrator key token.
+  - Only one API token is permitted per integration account.
+  - Annual renewal fees may increase by up to 7% without additional notice.
+  - All fees are non-refundable.
+
+sources:
+  - https://www.litify.com/legal/litify-api-integration-agreement
+  - https://www.litify.com/pricing
+  - https://www.capterra.com/p/160393/Litify/
+  - https://softwarefinder.com/legal/litify

@@ -1,0 +1,64 @@
+name: Litify FinOps
+description: Financial operations and cost management guidance for teams consuming the Litify API. Litify is a per-user SaaS product built on Salesforce; API usage costs are bundled into platform subscription fees rather than metered separately. However, total cost of ownership must account for both Litify and mandatory Salesforce licensing.
+url: https://www.litify.com/legal/litify-api-integration-agreement
+
+cost_model:
+  type: subscription-inclusive
+  notes: There are no separate API call charges or metered usage fees published for the Litify REST API or Docrio API. API access is included as part of the active Litify platform subscription.
+
+cost_components:
+
+  - name: Litify Platform License
+    unit: per user per month
+    estimated_starting_price_usd: 150
+    estimated_high_end_usd: 300
+    billing_cycle: annual (typical)
+    notes: Final price is contract-based via Order Form; not publicly listed. Auto-renewal may increase fees by up to 7% annually.
+
+  - name: Salesforce License (required)
+    unit: per user per month
+    notes: Litify requires a Salesforce org. Salesforce Enterprise Edition or higher is typical. Salesforce licensing is a separate cost negotiated directly with Salesforce.
+    estimated_starting_price_usd: 75
+    estimated_high_end_usd: 150
+
+  - name: Litify AI Add-on (LitifyAI)
+    unit: custom
+    notes: AI features including Litify ACE, LitifyAI Draft/Ask, AI Invoice Review, and Conflict Check Agent may be priced as an add-on. Pricing is not publicly disclosed.
+
+total_cost_of_ownership:
+  estimated_per_user_per_month_usd_range: "150-300+"
+  notes: Inclusive of Litify and Salesforce licensing. Smaller firms may face higher per-seat pricing; enterprise firms may negotiate volume discounts.
+
+cost_optimization_guidance:
+
+  - strategy: Right-size user licenses
+    description: Litify and Salesforce are both per-user. Audit active users regularly and remove or reassign unused licenses to control monthly costs.
+
+  - strategy: Monitor Salesforce API daily limits
+    description: Litify API calls count against your Salesforce org's daily API request quota (100,000 base + 1,000 per user license for Enterprise Edition). Implement monitoring via Salesforce's API usage reports to avoid hitting daily limits, which can disrupt integrations.
+
+  - strategy: Use a single API integration token per integration
+    description: Litify permits only one API token per integration account. Consolidate integration paths to avoid needing multiple accounts and contracts.
+
+  - strategy: Batch operations where possible
+    description: Use the Salesforce Bulk API for large data operations (up to 10,000 records per batch, 15,000 batch submissions per day) to reduce individual REST call overhead.
+
+  - strategy: Leverage included integrations before building custom APIs
+    description: Litify includes 30+ native integrations (DocuSign, QuickBooks, Outlook, RingCentral, etc.). Use these before investing in custom API development to reduce integration costs.
+
+  - strategy: Negotiate multi-year contracts
+    description: Litify pricing is contract-based. Multi-year commitments may yield lower per-user rates. Be aware of the up-to-7% annual auto-renewal price increase cap.
+
+  - strategy: Track AI feature adoption
+    description: LitifyAI and Litify ACE features may carry additional cost. Monitor adoption and value realization to justify add-on spend during renewal negotiations.
+
+payment_terms:
+  due_days: 30
+  refund_policy: All fees are non-refundable.
+  auto_renewal: Yes; price may increase up to 7% per renewal cycle.
+
+sources:
+  - https://www.litify.com/legal/litify-api-integration-agreement
+  - https://softwarefinder.com/legal/litify
+  - https://owlesq.com/tools/litify
+  - https://www.capterra.com/p/160393/Litify/

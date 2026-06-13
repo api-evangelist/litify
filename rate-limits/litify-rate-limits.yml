@@ -1,0 +1,60 @@
+name: Litify Rate Limits
+description: Litify is built on Salesforce and exposes two primary APIs — the Salesforce REST API and the Litify Docrio API. Rate limits for the Salesforce REST API are governed by Salesforce platform limits and vary by Salesforce org edition and license count. Litify-specific limits beyond these Salesforce defaults are not publicly documented.
+url: https://www.litify.com/legal/litify-api-integration-agreement
+
+salesforce_rest_api_limits:
+  description: Limits applicable to the Salesforce REST API, which underlies all Litify API access.
+  source: https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_api.htm
+
+  daily_api_requests:
+    enterprise_edition_base: 100000
+    per_user_license_additional: 1000
+    example_50_users_total: 150000
+    window: rolling 24-hour period
+    notes: Litify customers are typically on Enterprise Edition or above. Total daily limit scales with the number of Salesforce user licenses in the org.
+
+  concurrent_requests:
+    production_long_running_max: 25
+    developer_org_long_running_max: 5
+    long_running_threshold_seconds: 20
+    hard_timeout_minutes: 10
+    notes: Long-running requests are those exceeding 20 seconds. Production orgs allow up to 25 simultaneous long-running requests.
+
+  bulk_api:
+    batch_submissions_per_24h: 15000
+    max_records_per_batch: 10000
+    max_payload_mb: 10
+    shared_between: Bulk API 1.0 and 2.0
+
+  streaming_api:
+    push_topics_per_org: 50
+    daily_events: 200000
+
+  report_api:
+    synchronous_runs_per_hour: 500
+    concurrent_sync_requests: 20
+
+  asynchronous_requests_per_hour: 1200
+
+  apex_callouts_per_transaction: 100
+
+  debug_requests_daily: 1000
+
+  authentication:
+    method: OAuth 2.0
+    notes: OAuth connections enforce hourly restrictions per user per application through the Connect REST API. Litify additionally issues a proprietary integrator key token for API partner access.
+
+litify_docrio_api_limits:
+  description: Litify Docrio is the document management layer of the Litify platform. Specific rate limits for the Docrio API are not publicly disclosed.
+  notes: Assumed to inherit Salesforce platform limits; contact Litify for integrator-specific rate limit details.
+
+litify_api_token_limits:
+  tokens_per_integration_account: 1
+  token_sharing: prohibited
+  notes: Integrators are permitted only one API token per integration account. Tokens may not be shared with third parties.
+
+sources:
+  - https://www.litify.com/legal/litify-api-integration-agreement
+  - https://coefficient.io/salesforce-api/salesforce-api-rate-limits
+  - https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_api.htm
+  - https://developer.salesforce.com/blogs/2024/11/api-limits-and-monitoring-your-api-usage
