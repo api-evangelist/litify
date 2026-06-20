@@ -1,6 +1,6 @@
 name: Litify
 description: Litify is a legal operating system built on Salesforce that provides REST APIs for managing matters, intakes, documents, tasks, time tracking, billing, and client communications for law firms and legal departments. Integrators access Litify functionality via the Salesforce REST API and the Litify Docrio API under the terms of the Litify API Integration Agreement.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/litify/refs/heads/main/apis.yml
 type: Index
 tags:
@@ -23,7 +23,7 @@ apis:
 
   - name: Litify Salesforce REST API
     description: Provides access to the Litify legal operating system via the Salesforce REST API. Supports managing matters, intakes, documents, tasks, time tracking, billing, and client communications for law firms. Authentication uses an approved integrator key token provided by Litify alongside Salesforce OAuth 2.0.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.litify.com/platform
     baseURL: https://login.salesforce.com
     tags:
@@ -47,7 +47,7 @@ apis:
 
   - name: Litify Docrio API
     description: Provides access to Litify's Docrio document management layer, enabling integrators to create, retrieve, and manage documents and folders associated with legal matters. Documents uploaded via integrations are stored in Docrio and linked to matter records.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.litify.com/blog/docs-made-delightful
     baseURL: https://login.salesforce.com
     tags:

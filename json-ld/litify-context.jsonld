@@ -54,7 +54,7 @@
   "name": "Litify",
   "description": "Litify is a legal operating system built on Salesforce that provides REST APIs for managing matters, intakes, documents, tasks, time tracking, billing, and client communications for law firms and legal departments.",
   "url": "https://www.litify.com/",
-  "image": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "image": "https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg",
   "provider": {
     "@type": "Organization",
     "name": "Litify",
