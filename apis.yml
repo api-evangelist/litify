@@ -66,6 +66,8 @@ apis:
 
 common:
 
+  - type: DomainSecurity
+    url: security/litify-domain-security.yml
   - type: Plans
     url: https://raw.githubusercontent.com/api-evangelist/litify/refs/heads/main/plans/litify-plans-pricing.yml
 
