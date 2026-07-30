@@ -1,6 +1,18 @@
 name: Litify
 description: Litify is a legal operating system built on Salesforce that provides REST APIs for managing matters, intakes, documents, tasks, time tracking, billing, and client communications for law firms and legal departments. Integrators access Litify functionality via the Salesforce REST API and the Litify Docrio API under the terms of the Litify API Integration Agreement.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/litify.png
 url: https://raw.githubusercontent.com/api-evangelist/litify/refs/heads/main/apis.yml
 type: Index
 tags:
