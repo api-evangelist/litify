@@ -20,6 +20,17 @@ tags:
   - Law Firms
   - Matter Management
   - Intake Management
+  - Document-Management
+  - Time Tracking
+  - Billing
+  - Client Communications
+  - Legal Technology
+  - Salesforce
+tags_raw:
+  - Legal
+  - Law Firms
+  - Matter Management
+  - Intake Management
   - Document Management
   - Time Tracking
   - Billing
@@ -39,6 +50,14 @@ apis:
     humanURL: https://www.litify.com/platform
     baseURL: https://login.salesforce.com
     tags:
+      - Matters
+      - Intakes
+      - Documents
+      - Task
+      - Time Tracking
+      - Billing
+      - Client Communications
+    tags_raw:
       - Matters
       - Intakes
       - Documents
@@ -63,6 +82,11 @@ apis:
     humanURL: https://www.litify.com/blog/docs-made-delightful
     baseURL: https://login.salesforce.com
     tags:
+      - Documents
+      - Document-Management
+      - File Storage
+      - Matters
+    tags_raw:
       - Documents
       - Document Management
       - File Storage
