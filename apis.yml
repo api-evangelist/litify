@@ -61,7 +61,7 @@ apis:
     humanURL: https://www.litify.com/platform
     baseURL: https://login.salesforce.com
     tags:
-      - Matters
+      - Matter
       - Intakes
       - Documents
       - Task
@@ -96,7 +96,7 @@ apis:
       - Documents
       - Document-Management
       - File Storage
-      - Matters
+      - Matter
     tags_raw:
       - Documents
       - Document Management
