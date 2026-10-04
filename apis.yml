@@ -31,11 +31,11 @@ tags:
   - Law Firms
   - Matter Management
   - Intake Management
-  - Document-Management
+  - Document Management
   - Time Tracking
   - Billing
   - Client Communications
-  - Legal Technology
+  - Legal Tech
   - Salesforce
 tags_raw:
   - Legal
@@ -48,6 +48,7 @@ tags_raw:
   - Client Communications
   - Legal Technology
   - Salesforce
+  - Document-Management
 created: "2026-06-13"
 modified: "2026-06-13"
 specificationVersion: '0.23'
@@ -94,7 +95,7 @@ apis:
     baseURL: https://login.salesforce.com
     tags:
       - Documents
-      - Document-Management
+      - Document Management
       - File Storage
       - Matter
     tags_raw:
@@ -102,6 +103,7 @@ apis:
       - Document Management
       - File Storage
       - Matters
+      - Document-Management
     properties:
       - type: Documentation
         url: https://www.litify.com/blog/docs-made-delightful
