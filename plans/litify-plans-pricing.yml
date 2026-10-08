@@ -60,3 +60,21 @@ sources:
   - https://www.litify.com/pricing
   - https://www.capterra.com/p/160393/Litify/
   - https://softwarefinder.com/legal/litify
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Litify Platform
+    access: paid
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Litify AI Add-on (LitifyAI)
+    access: addon
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
